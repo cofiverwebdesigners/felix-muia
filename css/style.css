@@ -1,0 +1,52 @@
+body{
+	background:lightblue;
+}
+
+/* styling for Mobile View First */
+.grid{
+	display:grid;
+	grid-template-columns:100%;
+	row-gap:10px;
+}
+
+.grid img{
+	width:100%;
+}
+main p{
+	line-height:2;
+  }
+
+/* Styling for Tablet View */
+@media screen and (min-Width:772px) and (max-Width:991px){
+	.grid{
+	display:grid;
+	grid-template-columns:50% 50%;
+	row-gap:10px;
+}
+
+.grid img{
+	border-radius:50%;
+}
+main p{
+	line-height:2;
+  }
+}
+
+
+/* styling for Larger Screens */
+@media screen and (min-Width:992px){
+	.grid{
+	display:grid;
+	grid-template-columns:45% 45%;
+	row-gap:10px;
+		}
+	
+	.grid figure:nth-child(3n) {
+    grid-column: span 2;
+  }
+	main p{
+	line-height:2;
+	font-size:25px;
+  }
+}
+
